@@ -15,5 +15,10 @@
         "essential": true
       }
     ],
-    "family": "ctn-cicd-hdon-taskd"
-  }
+    "family": "ctn-cicd-hdon-taskd",
+    "requiresCompatibilities": ["FARGATE"],
+    "networkMode": "awsvpc",
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::474505339434:role/ecsTaskExecutionRole"
+}
